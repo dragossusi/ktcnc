@@ -1,6 +1,6 @@
 package com.mindovercnc.model
 
-import kotlinx.datetime.Instant
+import kotlinx.time.Instant
 import ro.dragossusi.proto.linuxcnc.status.SystemMessage
 
 data class MessageBundle(
