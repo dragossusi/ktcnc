@@ -1,6 +1,6 @@
 package com.mindovercnc.model.codegen
 
-import kotlinx.datetime.Instant
+import kotlinx.time.Instant
 
 class ConversationalProgram(
     private val programName: String,
