@@ -2,6 +2,7 @@ package com.mindovercnc.model.codegen
 
 import kotlin.time.Instant
 
+@OptIn(kotlin.time.ExperimentalTime::class)
 class ConversationalProgram(
     private val programName: String,
     private val creationDate: Instant,
