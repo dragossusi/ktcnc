@@ -1,11 +1,11 @@
 object Versions {
     const val kotlin = "2.2.0"
     const val ksp = "2.2.0-2.0.2"
-    const val compose = "1.9.0-beta01"
-    const val material3adaptive = "1.2.0-alpha04"
+    const val compose = "1.9.0"
+    const val material3adaptive = "1.2.0-alpha06"
     const val kodein = "7.26.1"
 
-    const val okio = "3.10.2"
+    const val okio = "3.16.0"
     const val wire = "5.3.6"
     const val roborazzi = "1.46.1"
 
@@ -15,7 +15,7 @@ object Versions {
     const val bignum = "0.3.10"
     const val mockk = "1.13.7"
     const val decompose = "3.3.0"
-    const val ktor = "3.2.3"
+    const val ktor = "3.3.0"
 
     object Kotlinx {
         const val datetime = "0.7.1"
