@@ -39,7 +39,7 @@ object Versions {
         const val grpc = "1.68.0"
 
         object Wire {
-            const val plugin = "5.1.0"
+            const val plugin = "5.4.0"
         }
     }
 
