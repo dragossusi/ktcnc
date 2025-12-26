@@ -26,7 +26,7 @@ run {
         include("data:linuxcnc:api")
     }
     run {
-        include("data:common:local")
+//        include("data:common:local")
 
         include("data:common:impl")
 

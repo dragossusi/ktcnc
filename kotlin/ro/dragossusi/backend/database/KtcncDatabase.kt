@@ -1,5 +1,3 @@
-package com.mindovercnc.database
-
 import androidx.room.ConstructedBy
 import androidx.room.Database
 import androidx.room.RoomDatabase

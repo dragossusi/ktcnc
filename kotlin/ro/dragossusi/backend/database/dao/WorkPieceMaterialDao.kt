@@ -1,5 +1,3 @@
-package com.mindovercnc.database.dao
-
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert

@@ -1,5 +1,3 @@
-package com.mindovercnc.database.dao
-
 import androidx.room.*
 import com.mindovercnc.database.entity.LatheToolEntity
 

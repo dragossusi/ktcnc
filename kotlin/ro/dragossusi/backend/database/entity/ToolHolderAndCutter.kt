@@ -1,5 +1,3 @@
-package com.mindovercnc.database.entity
-
 import androidx.room.Embedded
 import androidx.room.Relation
 

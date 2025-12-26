@@ -1,5 +1,3 @@
-package com.mindovercnc.database.di
-
 import androidx.room.RoomDatabase
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
 import com.mindovercnc.database.KtcncDatabase

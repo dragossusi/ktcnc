@@ -1,5 +1,3 @@
-package com.mindovercnc.database.initializer
-
 import com.mindovercnc.database.KtcncDatabase
 import com.mindovercnc.database.MaterialCategory
 import com.mindovercnc.database.entity.CuttingInsertEntity
