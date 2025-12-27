@@ -1,0 +1,11 @@
+load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "database",
+    srcs = glob(["**/*.kt"]),
+    plugins = ["//third_party/kotlin/room:room_ksp_plugin"],
+    deps = [
+        "@maven//:androidx_room_room_common",
+        "@maven//:androidx_room_room_runtime",
+    ],
+)

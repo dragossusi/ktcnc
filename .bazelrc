@@ -1,6 +1,9 @@
 # load user defined
 try-import %workspace%/user.bazelrc
 
+# java 17
+build --java_language_version=17
+
 # set c++17
 # build --action_env=BAZEL_CXXOPTS="-std=c++17"
 

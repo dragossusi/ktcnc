@@ -18,7 +18,6 @@ bin*
 .kotlin/
 
 **/build
-*.bazel
 /kotlin-js-store/yarn.lock
 /bazel-bin/
 /bazel-ktcnc/
