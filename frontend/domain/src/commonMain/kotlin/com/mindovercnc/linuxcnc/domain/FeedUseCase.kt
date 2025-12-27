@@ -4,7 +4,7 @@ import com.mindovercnc.data.linuxcnc.CncStatusRepository
 import com.mindovercnc.linuxcnc.settings.model.BooleanKey
 import com.mindovercnc.linuxcnc.settings.model.DoubleKey
 import com.mindovercnc.linuxcnc.settings.SettingsRepository
-import com.mindovercnc.model.FeedUiModel
+import ro.dragossusi.model.FeedUiModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged

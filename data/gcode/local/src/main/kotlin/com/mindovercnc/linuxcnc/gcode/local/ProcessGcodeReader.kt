@@ -6,8 +6,8 @@ import com.mindovercnc.data.linuxcnc.VarFilePath
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.linuxcnc.reader.gcode.GCodeCommand
 import com.mindovercnc.linuxcnc.reader.gcode.GcodeReader
-import com.mindovercnc.log.PrintColor
-import com.mindovercnc.log.colored
+import ro.dragossusi.log.PrintColor
+import ro.dragossusi.log.colored
 import kotlinx.coroutines.withContext
 import mu.KotlinLogging
 import okio.Path

@@ -2,7 +2,7 @@ package com.mindovercnc.linuxcnc.actor
 
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.Path
-import com.mindovercnc.model.PlaneType
+import ro.dragossusi.model.PlaneType
 import org.jetbrains.skia.Point
 import kotlin.math.PI
 import kotlin.math.acos

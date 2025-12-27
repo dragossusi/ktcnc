@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.model.WcsOffset
-import com.mindovercnc.model.WcsUiModel
+import ro.dragossusi.model.WcsOffset
+import ro.dragossusi.model.WcsUiModel
 
 @Composable
 fun WcsOffsetsDialog(

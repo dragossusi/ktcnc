@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.widgets.cards.CardWithTitle
-import com.mindovercnc.model.SpindleDirection
+import ro.dragossusi.model.SpindleDirection
 import ktcnc.frontend.screen.tools.generated.resources.Res
 import ktcnc.frontend.screen.tools.generated.resources.spindle_both
 import ktcnc.frontend.screen.tools.generated.resources.spindle_fwd

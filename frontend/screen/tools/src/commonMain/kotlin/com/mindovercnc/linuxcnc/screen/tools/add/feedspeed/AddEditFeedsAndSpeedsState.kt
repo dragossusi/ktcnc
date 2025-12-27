@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.screen.tools.add.feedspeed
 
-import com.mindovercnc.model.MaterialCategory
+import ro.dragossusi.model.MaterialCategory
 
 data class AddEditFeedsAndSpeedsState(
     val materialName: String = "",

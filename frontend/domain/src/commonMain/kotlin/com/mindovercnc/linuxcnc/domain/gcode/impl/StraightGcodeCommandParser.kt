@@ -4,7 +4,7 @@ import com.mindovercnc.linuxcnc.actor.PathElement
 import com.mindovercnc.linuxcnc.domain.gcode.GcodeCommandParseScope
 import com.mindovercnc.linuxcnc.domain.gcode.GcodeCommandParser
 import com.mindovercnc.linuxcnc.reader.gcode.GCodeCommand
-import com.mindovercnc.model.Point3D
+import ro.dragossusi.model.Point3D
 
 /** [GcodeCommandParser] that handles straight commands. */
 object StraightGcodeCommandParser : GcodeCommandParser {

@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.screen.manual.turning.ManualTurningComponent
 import com.mindovercnc.linuxcnc.screen.manual.turning.ManualTurningState
-import com.mindovercnc.model.WcsUiModel
+import ro.dragossusi.model.WcsUiModel
 
 @Composable
 fun RowScope.ManualTurningActions(component: ManualTurningComponent) {

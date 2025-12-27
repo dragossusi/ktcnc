@@ -10,10 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.screen.tools.add.cuttinginsert.AddEditCuttingInsertState
-import com.mindovercnc.model.InsertClearance
-import com.mindovercnc.model.InsertShape
-import com.mindovercnc.model.MountingAndChipBreaker
-import com.mindovercnc.model.ToleranceClass
+import ro.dragossusi.model.InsertClearance
+import ro.dragossusi.model.InsertShape
+import ro.dragossusi.model.MountingAndChipBreaker
+import ro.dragossusi.model.ToleranceClass
 
 @Composable
 fun StandardInsert(

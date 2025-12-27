@@ -1,6 +1,6 @@
 package com.mindovercnc.data.linuxcnc.model
 
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.TipOrientation
 
 /**
  * This represents a 1:1 mapping with a line from tool.tbl file.

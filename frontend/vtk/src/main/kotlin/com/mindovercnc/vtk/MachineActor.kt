@@ -1,6 +1,6 @@
 package com.mindovercnc.vtk
 
-import com.mindovercnc.model.MachineLimits
+import ro.dragossusi.model.MachineLimits
 import vtk.vtkCubeAxesActor
 
 

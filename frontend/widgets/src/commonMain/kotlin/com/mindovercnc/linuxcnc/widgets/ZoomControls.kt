@@ -18,7 +18,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.onPointerEvent
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.linuxcnc.format.formatMaxDecimals
+import ro.dragossusi.formatformatMaxDecimals
 
 private val iconButtonModifier = Modifier.size(48.dp)
 

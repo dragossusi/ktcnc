@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc.screen.manual.turning
 
 import com.mindovercnc.linuxcnc.numpad.NumPadState
-import com.mindovercnc.model.*
+import ro.dragossusi.model.*
 
 data class ManualTurningState(
     val axisCoordinates: CoordinatesUiData =

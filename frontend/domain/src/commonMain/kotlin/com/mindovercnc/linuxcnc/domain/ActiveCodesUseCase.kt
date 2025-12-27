@@ -2,7 +2,7 @@ package com.mindovercnc.linuxcnc.domain
 
 import com.mindovercnc.data.linuxcnc.CncStatusRepository
 import com.mindovercnc.linuxcnc.domain.model.ActiveCode
-import com.mindovercnc.linuxcnc.format.stripZeros
+import ro.dragossusi.format.stripZeros
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

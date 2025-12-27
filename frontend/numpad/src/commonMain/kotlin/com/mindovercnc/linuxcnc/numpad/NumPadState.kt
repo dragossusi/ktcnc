@@ -4,7 +4,7 @@ import androidx.compose.runtime.mutableStateOf
 import com.ionspin.kotlin.bignum.decimal.DecimalMode
 import com.ionspin.kotlin.bignum.decimal.RoundingMode
 import com.ionspin.kotlin.bignum.decimal.toBigDecimal
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.numpad.data.InputType
 import com.mindovercnc.linuxcnc.numpad.data.NumInputParameters
 

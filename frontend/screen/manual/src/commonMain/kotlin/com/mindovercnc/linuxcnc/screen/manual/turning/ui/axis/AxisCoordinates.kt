@@ -13,8 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.model.CoordinatesUiData
-import com.mindovercnc.model.CoordinateAxis
+import ro.dragossusi.model.CoordinatesUiData
+import ro.dragossusi.model.CoordinateAxis
 
 private val axisItemModifier = Modifier.fillMaxWidth().height(80.dp).padding(8.dp)
 

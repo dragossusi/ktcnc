@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.listitem.LabelWithValue
 import com.mindovercnc.linuxcnc.screen.tools.list.tabs.data.LatheToolColumns
 import com.mindovercnc.linuxcnc.screen.tools.list.tabs.lathetool.LatheToolsState

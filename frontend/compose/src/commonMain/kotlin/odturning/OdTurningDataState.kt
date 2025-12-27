@@ -2,9 +2,9 @@ package odturning
 
 import androidx.compose.runtime.mutableStateOf
 import com.mindovercnc.linuxcnc.domain.model.CuttingParametersState
-import com.mindovercnc.model.CutDirection
-import com.mindovercnc.model.CuttingStrategy
-import com.mindovercnc.model.codegen.Wcs
+import ro.dragossusi.model.CutDirection
+import ro.dragossusi.model.CuttingStrategy
+import ro.dragossusi.model.codegen.Wcs
 
 internal class OdTurningDataState(
     wcs: Wcs,

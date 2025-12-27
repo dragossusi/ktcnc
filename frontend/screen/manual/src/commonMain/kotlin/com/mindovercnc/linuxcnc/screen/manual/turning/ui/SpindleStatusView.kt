@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mindovercnc.linuxcnc.widgets.SettingStatusRow
-import com.mindovercnc.model.SpindleUiModel
+import ro.dragossusi.model.SpindleUiModel
 
 @Composable
 fun SpindleStatusView(

@@ -11,7 +11,7 @@ import com.mindovercnc.linuxcnc.screen.manual.tapersettings.TaperSettingsCompone
 import com.mindovercnc.linuxcnc.screen.manual.turning.ManualTurningComponent
 import com.mindovercnc.linuxcnc.screen.manual.turningsettings.TurningSettingsComponent
 import com.mindovercnc.linuxcnc.screen.manual.virtuallimits.VirtualLimitsComponent
-import com.mindovercnc.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycle
 import kotlinx.serialization.Serializable
 
 interface ManualRootComponent {

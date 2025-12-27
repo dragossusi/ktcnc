@@ -15,7 +15,7 @@ import com.mindovercnc.linuxcnc.screen.manual.turningsettings.TurningSettingsCom
 import com.mindovercnc.linuxcnc.screen.manual.turningsettings.TurningSettingsScreenModel
 import com.mindovercnc.linuxcnc.screen.manual.virtuallimits.VirtualLimitsComponent
 import com.mindovercnc.linuxcnc.screen.manual.virtuallimits.VirtualLimitsScreenModel
-import com.mindovercnc.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycle
 import org.kodein.di.DI
 import org.kodein.di.bindProvider
 import org.kodein.di.subDI

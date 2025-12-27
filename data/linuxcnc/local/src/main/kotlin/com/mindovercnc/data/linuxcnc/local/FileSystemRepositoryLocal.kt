@@ -2,7 +2,7 @@ package com.mindovercnc.data.linuxcnc.local
 
 import com.mindovercnc.data.linuxcnc.FileSystemRepository
 import com.mindovercnc.dispatchers.IoDispatcher
-import com.mindovercnc.model.extension
+import ro.dragossusi.model.extension
 import okio.FileSystem
 import okio.Path
 import okio.Path.Companion.toPath

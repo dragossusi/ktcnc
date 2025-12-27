@@ -26,8 +26,8 @@ import com.mindovercnc.linuxcnc.screen.tools.root.ToolsRootComponent
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.ToolType
 import androidx.compose.material3.VerticalDivider
-import com.mindovercnc.model.SpindleDirection
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.SpindleDirection
+import ro.dragossusi.model.TipOrientation
 import scroll.draggableScroll
 
 private val inputModifier = Modifier.width(200.dp)

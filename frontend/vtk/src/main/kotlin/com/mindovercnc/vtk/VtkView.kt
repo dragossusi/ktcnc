@@ -3,8 +3,8 @@ package com.mindovercnc.vtk
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.awt.SwingPanel
-import com.mindovercnc.model.MachineLimits
-import com.mindovercnc.model.PathElement
+import ro.dragossusi.model.MachineLimits
+import ro.dragossusi.model.PathElement
 import actor.Point2D
 
 data class VtkUiState(

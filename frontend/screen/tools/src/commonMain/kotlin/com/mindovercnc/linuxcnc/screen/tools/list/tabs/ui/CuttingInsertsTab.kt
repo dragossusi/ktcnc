@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.screen.tools.list.tabs.cuttinginsert.CuttingInsertState
 import com.mindovercnc.linuxcnc.screen.tools.list.tabs.data.CuttingInsertsColumns
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert

@@ -3,7 +3,7 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.SpindleDirection
+import ro.dragossusi.model.SpindleDirection
 
 @Entity(
     tableName = "lathe_tool",

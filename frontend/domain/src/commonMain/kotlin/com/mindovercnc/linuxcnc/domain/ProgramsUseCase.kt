@@ -1,8 +1,8 @@
 package com.mindovercnc.linuxcnc.domain
 
 import com.mindovercnc.data.linuxcnc.CncCommandRepository
-import com.mindovercnc.model.AxisPosition
-import com.mindovercnc.model.PositionModel
+import ro.dragossusi.model.AxisPosition
+import ro.dragossusi.model.PositionModel
 import kotlinx.coroutines.flow.combine
 import okio.Path
 import ro.dragossusi.proto.linuxcnc.status.TaskMode

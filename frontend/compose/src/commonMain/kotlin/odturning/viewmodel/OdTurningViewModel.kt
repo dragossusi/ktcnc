@@ -2,11 +2,11 @@ package odturning.viewmodel
 
 import com.mindovercnc.linuxcnc.domain.ConversationalUseCase
 import com.mindovercnc.linuxcnc.domain.model.CuttingParametersState
-import com.mindovercnc.model.CutDirection
-import com.mindovercnc.model.CuttingStrategy
-import com.mindovercnc.model.codegen.Wcs
-import com.mindovercnc.model.codegen.geometry.OdProfileGeometry
-import com.mindovercnc.model.codegen.operation.TurningOperation
+import ro.dragossusi.model.CutDirection
+import ro.dragossusi.model.CuttingStrategy
+import ro.dragossusi.model.codegen.Wcs
+import ro.dragossusi.model.codegen.geometry.OdProfileGeometry
+import ro.dragossusi.model.codegen.operation.TurningOperation
 import odturning.OdTurningDataState
 import odturning.WorkpieceMaterial
 

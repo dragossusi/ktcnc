@@ -8,7 +8,7 @@ import com.mindovercnc.linuxcnc.tools.ToolHolderRepository
 import com.mindovercnc.linuxcnc.tools.model.LatheTool
 import com.mindovercnc.linuxcnc.tools.model.ToolHolder
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.TipOrientation
 
 /** Implementation for [ToolHolderRepository]. */
 class ToolHolderRepositoryLocal(

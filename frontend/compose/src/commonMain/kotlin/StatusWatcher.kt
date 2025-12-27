@@ -1,4 +1,4 @@
-import com.mindovercnc.model.CncStateMessage
+import ro.dragossusi.model.CncStateMessage
 import com.mindovercnc.repository.CncMessagesRepository
 import com.mindovercnc.repository.MotionStatusRepository
 import com.mindovercnc.repository.TaskStatusRepository

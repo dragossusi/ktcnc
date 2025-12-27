@@ -1,6 +1,6 @@
 package com.mindovercnc.repository
 
-import com.mindovercnc.model.CncStateMessage
+import ro.dragossusi.model.CncStateMessage
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.datetime.Instant
 

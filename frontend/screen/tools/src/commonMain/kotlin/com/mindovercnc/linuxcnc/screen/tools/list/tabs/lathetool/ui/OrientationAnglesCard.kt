@@ -11,7 +11,7 @@ import com.mindovercnc.linuxcnc.listitem.ValueSetting
 import com.mindovercnc.linuxcnc.numpad.data.InputType
 import com.mindovercnc.linuxcnc.screen.tools.add.lathetool.AddEditLatheToolState
 import com.mindovercnc.linuxcnc.widgets.cards.CardWithTitle
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.TipOrientation
 
 @Composable
 fun OrientationAnglesCard(

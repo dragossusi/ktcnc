@@ -81,12 +81,23 @@ git submodule update --init --recursive
 
 This will clone the 3rd party library that this project depends on.
 
+### Gradle
+
 Set the required arguments in `gradle.properties` **or** environment variables.
 
-| Env           | Property      | Description                |
-|---------------|---------------|----------------------------|
-| LINUXCNC_HOME | linuxcnc.home | The linuxcnc home folder   |
-| LINUXCNC_JDK  | linuxcnc.jdk  | The jdk to be used for JNI |
+| Env           | Property      | Description                     |
+|---------------|---------------|---------------------------------|
+| LINUXCNC_HOME | linuxcnc.home | The linuxcnc home folder        |
+| LINUXCNC_JDK  | linuxcnc.jdk  | The jdk to be used for JNI      |
+| ANDROID_HOME  |               | The location of the android SDK |
+
+### Bazel
+
+Create a file named `user.bazelrc` with that defines the env variables:
+
+```bazelrc
+common --repo_env=ANDROID_HOME=/path/to/sdk
+```
 
 [//]: # (| VTK_JAR       | vtk.jar       | Path to vtk.jar            |)
 

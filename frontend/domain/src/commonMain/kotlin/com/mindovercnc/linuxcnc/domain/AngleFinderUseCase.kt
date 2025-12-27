@@ -7,10 +7,10 @@ import com.mindovercnc.data.linuxcnc.IniFileRepository
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.dispatchers.createScope
 import com.mindovercnc.linuxcnc.domain.model.AngleFinderState
-import com.mindovercnc.linuxcnc.format.stripZeros
+import ro.dragossusi.format.stripZeros
 import com.mindovercnc.linuxcnc.settings.SettingsRepository
-import com.mindovercnc.model.CncStateMessage
-import com.mindovercnc.model.codegen.CodegenPoint
+import ro.dragossusi.model.CncStateMessage
+import ro.dragossusi.model.codegen.CodegenPoint
 import com.mindovercnc.repository.CncMessagesRepository
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

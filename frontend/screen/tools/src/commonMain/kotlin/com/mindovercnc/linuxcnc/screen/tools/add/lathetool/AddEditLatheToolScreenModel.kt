@@ -7,8 +7,8 @@ import com.mindovercnc.linuxcnc.screen.BaseScreenModel
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.LatheTool
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.SpindleDirection
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.SpindleDirection
+import ro.dragossusi.model.TipOrientation
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import org.kodein.di.DI

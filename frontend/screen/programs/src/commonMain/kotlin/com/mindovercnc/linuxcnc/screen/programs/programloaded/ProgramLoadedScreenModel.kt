@@ -14,7 +14,7 @@ import com.mindovercnc.linuxcnc.domain.model.PathUiState
 import com.mindovercnc.linuxcnc.domain.model.ZoomRange
 import com.mindovercnc.linuxcnc.screen.BaseScreenModel
 import com.mindovercnc.linuxcnc.screen.programs.programloaded.ui.ToolChangeModel
-import com.mindovercnc.model.MachineLimits
+import ro.dragossusi.model.MachineLimits
 import editor.EditorState
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.launchIn

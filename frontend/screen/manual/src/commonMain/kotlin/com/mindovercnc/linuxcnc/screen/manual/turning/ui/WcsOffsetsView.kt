@@ -15,10 +15,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.toFixedDigitsString
 import scroll.draggableScroll
 import com.mindovercnc.linuxcnc.listitem.LabelWithValue
-import com.mindovercnc.model.WcsOffset
+import ro.dragossusi.model.WcsOffset
 
 val offsetItemModifier = Modifier.wrapContentHeight()
     .width(200.dp)

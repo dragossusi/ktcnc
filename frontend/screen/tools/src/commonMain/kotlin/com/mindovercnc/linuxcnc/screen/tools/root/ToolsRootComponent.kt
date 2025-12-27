@@ -6,7 +6,7 @@ import com.mindovercnc.linuxcnc.screen.tools.root.child.ToolsChild
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.LatheTool
 import com.mindovercnc.linuxcnc.tools.model.ToolHolder
-import com.mindovercnc.model.FeedsAndSpeeds
+import ro.dragossusi.model.FeedsAndSpeeds
 import kotlinx.serialization.Serializable
 
 interface ToolsRootComponent {

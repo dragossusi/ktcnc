@@ -1,7 +1,7 @@
 package com.mindovercnc.data.lathehal.model
 
-import com.mindovercnc.model.Axis
-import com.mindovercnc.model.Direction
+import ro.dragossusi.model.Axis
+import ro.dragossusi.model.Direction
 
 data class JoystickStatus(
     val position: Position,

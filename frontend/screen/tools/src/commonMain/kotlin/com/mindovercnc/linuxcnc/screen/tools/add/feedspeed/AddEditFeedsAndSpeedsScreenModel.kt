@@ -3,7 +3,7 @@ package com.mindovercnc.linuxcnc.screen.tools.add.feedspeed
 import com.arkivanov.decompose.ComponentContext
 import com.mindovercnc.linuxcnc.domain.tools.ToolsUseCase
 import com.mindovercnc.linuxcnc.screen.BaseScreenModel
-import com.mindovercnc.model.FeedsAndSpeeds
+import ro.dragossusi.model.FeedsAndSpeeds
 import kotlinx.coroutines.flow.update
 import org.kodein.di.DI
 import org.kodein.di.instance

@@ -3,7 +3,7 @@ package com.mindovercnc.linuxcnc
 import com.mindovercnc.data.linuxcnc.SystemMessageRepository
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.dispatchers.createScope
-import com.mindovercnc.model.CncStateMessage
+import ro.dragossusi.model.CncStateMessage
 import com.mindovercnc.repository.EmcMessagesRepository
 import kotlinx.coroutines.flow.*
 import kotlinx.datetime.Instant

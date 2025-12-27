@@ -12,7 +12,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.numpad.InputDialogView
 import com.mindovercnc.linuxcnc.numpad.NumPadState
 import com.mindovercnc.linuxcnc.numpad.data.InputType

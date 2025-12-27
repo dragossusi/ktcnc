@@ -1,5 +1,6 @@
 directories:
   kotlin
+  proto
   third_party
 
 targets:

@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc.screen.tools.add.cuttinginsert
 
 import com.mindovercnc.linuxcnc.tools.model.MadeOf
-import com.mindovercnc.model.*
+import ro.dragossusi.model.*
 
 data class AddEditCuttingInsertState(
     val cuttingInsertId: Int? = null,

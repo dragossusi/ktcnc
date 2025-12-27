@@ -11,7 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.screen.manual.root.ManualRootComponent
 import com.mindovercnc.linuxcnc.screen.manual.turning.ManualTurningComponent
-import com.mindovercnc.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycle
 
 @Composable
 fun ManualTurningDrawerContent(

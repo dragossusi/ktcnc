@@ -4,10 +4,10 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.mindovercnc.linuxcnc.format.stripZeros
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.stripZeros
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.widgets.cards.CardWithTitle
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycleParameters
 
 @Composable
 fun SimpleCycleStatusUi(

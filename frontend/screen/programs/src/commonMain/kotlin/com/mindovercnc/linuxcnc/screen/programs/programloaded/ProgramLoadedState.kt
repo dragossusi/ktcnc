@@ -4,7 +4,7 @@ import com.mindovercnc.linuxcnc.domain.model.ActiveCode
 import com.mindovercnc.linuxcnc.domain.model.VisualTurningState
 import com.mindovercnc.linuxcnc.screen.programs.programloaded.ui.MachineStatus
 import com.mindovercnc.linuxcnc.screen.programs.programloaded.ui.ToolChangeModel
-import com.mindovercnc.model.PositionModel
+import ro.dragossusi.model.PositionModel
 import editor.EditorState
 import okio.Path
 

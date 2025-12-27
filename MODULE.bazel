@@ -1,8 +1,7 @@
-bazel_dep(name = "bazel_skylib", version = "1.3.0")
+bazel_dep(name = "bazel_skylib", version = "1.9.0")
 bazel_dep(name = "rules_jvm_external", version = "6.9")
-bazel_dep(name = "rules_kotlin", version = "2.2.1")
 bazel_dep(name = "rules_android", version = "0.6.6")
-bazel_dep(name = "rules_java", version = "7.10.0")
+bazel_dep(name = "rules_java", version = "8.9.0")
 
 remote_android_extensions = use_extension(
     "@rules_android//bzlmod_extensions:android_extensions.bzl",
@@ -15,12 +14,18 @@ use_repo(android_sdk_repository_extension, "androidsdk")
 
 register_toolchains("@androidsdk//:sdk-toolchain", "@androidsdk//:all")
 
+# maven
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
+        # okio
+        "com.squareup.okio:okio:3.16.0",
+        # room
         "androidx.room:room-runtime:2.8.4",
         "androidx.room:room-compiler:2.8.4",  # Required for the processor
         "androidx.room:room-common:2.8.4",
+        # bignum
+        "com.ionspin.kotlin:bignum-jvm:0.3.10",
     ],
     repositories = [
         "https://maven.google.com",
@@ -28,5 +33,8 @@ maven.install(
     ],
 )
 use_repo(maven, "maven")
+
+# kotlin
+bazel_dep(name = "rules_kotlin", version = "2.2.1")
 
 register_toolchains("//:kotlin_toolchain")

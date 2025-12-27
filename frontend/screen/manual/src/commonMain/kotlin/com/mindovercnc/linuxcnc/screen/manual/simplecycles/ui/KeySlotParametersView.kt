@@ -7,7 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.numpad.data.InputType
 import com.mindovercnc.linuxcnc.screen.manual.simplecycles.SimpleCyclesComponent
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycleParameters
 
 @Composable
 fun KeySlotParametersView(

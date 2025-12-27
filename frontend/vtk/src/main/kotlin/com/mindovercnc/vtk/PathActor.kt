@@ -1,6 +1,6 @@
 package com.mindovercnc.vtk
 
-import com.mindovercnc.model.PathElement
+import ro.dragossusi.model.PathElement
 import actor.Point2D
 import vtk.*
 

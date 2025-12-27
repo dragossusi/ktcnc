@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import com.mindovercnc.linuxcnc.canvas.Canvas2DScope
 import com.mindovercnc.linuxcnc.canvas.CanvasActor
-import com.mindovercnc.model.PlaneType
+import ro.dragossusi.model.PlaneType
 import org.jetbrains.skia.Point
 
 private const val dash = 2f

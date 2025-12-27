@@ -17,7 +17,7 @@ import com.mindovercnc.linuxcnc.screen.tools.add.feedspeed.AddEditFeedsAndSpeeds
 import com.mindovercnc.linuxcnc.screen.tools.add.feedspeed.AddEditFeedsAndSpeedsState
 import com.mindovercnc.linuxcnc.widgets.NumericInputWithUnit
 import androidx.compose.material3.VerticalDivider
-import com.mindovercnc.model.MaterialCategory
+import ro.dragossusi.model.MaterialCategory
 
 @Composable
 fun AddEditFeedsAndSpeedsScreenUi(

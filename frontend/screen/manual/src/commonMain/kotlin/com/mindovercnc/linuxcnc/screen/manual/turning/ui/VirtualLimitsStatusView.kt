@@ -4,8 +4,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
-import com.mindovercnc.model.VirtualLimitsUiModel
+import ro.dragossusi.format.toFixedDigitsString
+import ro.dragossusi.model.VirtualLimitsUiModel
 import com.mindovercnc.linuxcnc.widgets.cards.CardWithTitle
 
 @Composable

@@ -4,8 +4,8 @@ import com.arkivanov.decompose.ComponentContext
 import com.mindovercnc.linuxcnc.domain.PositionUseCase
 import com.mindovercnc.linuxcnc.domain.SimpleCyclesUseCase
 import com.mindovercnc.linuxcnc.screen.BaseScreenModel
-import com.mindovercnc.model.SimpleCycle
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycleParameters
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import org.kodein.di.DI

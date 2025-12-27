@@ -6,7 +6,7 @@ import com.mindovercnc.database.entity.LatheToolEntity
 import com.mindovercnc.linuxcnc.tools.LatheToolRepository
 import com.mindovercnc.linuxcnc.tools.model.LatheTool
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.TipOrientation
 import mu.KotlinLogging
 
 /** Implementation for [LatheToolRepository]. */

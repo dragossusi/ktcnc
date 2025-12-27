@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.linuxcnc.format.stripZeros
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
+import ro.dragossusi.format.stripZeros
+import ro.dragossusi.format.toFixedDigitsString
 import com.mindovercnc.linuxcnc.screen.tools.list.tabs.lathetool.ui.DirectionItem
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.LatheTool

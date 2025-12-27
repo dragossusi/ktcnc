@@ -13,8 +13,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
-import com.mindovercnc.model.FeedUiModel
+import ro.dragossusi.format.toFixedDigitsString
+import ro.dragossusi.model.FeedUiModel
 import com.mindovercnc.linuxcnc.widgets.SettingStatusRow
 
 @Composable

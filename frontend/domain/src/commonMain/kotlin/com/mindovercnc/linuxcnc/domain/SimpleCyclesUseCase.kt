@@ -4,10 +4,10 @@ import com.mindovercnc.data.lathehal.HalRepository
 import com.mindovercnc.data.linuxcnc.CncCommandRepository
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.dispatchers.createScope
-import com.mindovercnc.linuxcnc.format.stripZeros
+import ro.dragossusi.format.stripZeros
 import com.mindovercnc.linuxcnc.settings.SettingsRepository
-import com.mindovercnc.model.SimpleCycle
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycleParameters
 import com.mindovercnc.repository.TaskStatusRepository
 import kotlinx.coroutines.flow.*
 import ro.dragossusi.proto.linuxcnc.status.TaskMode

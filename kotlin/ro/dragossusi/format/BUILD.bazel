@@ -1,0 +1,10 @@
+load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "format",
+    srcs = ["Extensions.kt"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@maven//:com_ionspin_kotlin_bignum_jvm",
+    ],
+)

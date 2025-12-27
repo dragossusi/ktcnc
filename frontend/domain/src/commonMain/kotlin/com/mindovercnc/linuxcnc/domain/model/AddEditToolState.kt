@@ -2,7 +2,7 @@ package com.mindovercnc.linuxcnc.domain.model
 
 import androidx.compose.runtime.mutableStateOf
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.AllowedSpindleDirection
+import ro.dragossusi.model.AllowedSpindleDirection
 
 class AddEditToolState(
     toolNo: Int,

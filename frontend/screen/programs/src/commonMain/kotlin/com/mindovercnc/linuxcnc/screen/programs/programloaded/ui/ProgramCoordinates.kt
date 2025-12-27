@@ -14,9 +14,9 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
-import com.mindovercnc.model.AxisPosition
-import com.mindovercnc.model.PositionModel
+import ro.dragossusi.format.toFixedDigitsString
+import ro.dragossusi.model.AxisPosition
+import ro.dragossusi.model.PositionModel
 
 private enum class CoordinateType(val fontSize: TextUnit, val width: Dp) {
     PRIMARY(28.sp, 140.dp),

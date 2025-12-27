@@ -1,0 +1,1 @@
+common --repo_env=ANDROID_HOME=/home/dragos/Android/Sdk

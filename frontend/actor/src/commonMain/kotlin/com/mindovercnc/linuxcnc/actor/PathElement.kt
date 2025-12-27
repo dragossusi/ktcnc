@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.actor
 
-import com.mindovercnc.model.Point3D
+import ro.dragossusi.model.Point3D
 
 sealed class PathElement(
     open val startPoint: Point3D,

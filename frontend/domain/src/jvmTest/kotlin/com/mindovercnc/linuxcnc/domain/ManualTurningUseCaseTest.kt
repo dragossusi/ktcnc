@@ -9,7 +9,7 @@ import com.mindovercnc.data.linuxcnc.IniFileRepository
 import com.mindovercnc.data.linuxcnc.model.G53AxisLimits
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.linuxcnc.settings.SettingsRepository
-import com.mindovercnc.model.CncStateMessage
+import ro.dragossusi.model.CncStateMessage
 import com.mindovercnc.repository.CncMessagesRepository
 import com.mindovercnc.repository.MotionStatusRepository
 import io.mockk.coVerify

@@ -3,8 +3,8 @@ package com.mindovercnc.linuxcnc.domain
 import com.mindovercnc.data.linuxcnc.FileSystemRepository
 import com.mindovercnc.dispatchers.IoDispatcher
 import com.mindovercnc.dispatchers.createScope
-import com.mindovercnc.model.codegen.ConversationalProgram
-import com.mindovercnc.model.codegen.operation.TurningOperation
+import ro.dragossusi.model.codegen.ConversationalProgram
+import ro.dragossusi.model.codegen.operation.TurningOperation
 import kotlinx.coroutines.launch
 import kotlinx.datetime.Clock
 import mu.KotlinLogging

@@ -18,9 +18,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
-import com.mindovercnc.model.CoordinateAxis
-import com.mindovercnc.model.CoordinateUiModel
+import ro.dragossusi.format.toFixedDigitsString
+import ro.dragossusi.model.CoordinateAxis
+import ro.dragossusi.model.CoordinateUiModel
 
 @Composable
 fun AxisCoordinate(

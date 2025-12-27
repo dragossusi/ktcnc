@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc.screen.manual.simplecycles
 
 import com.mindovercnc.linuxcnc.screen.AppScreenComponent
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycleParameters
 
 interface SimpleCyclesComponent : AppScreenComponent<SimpleCyclesState> {
     fun enterEditMode()

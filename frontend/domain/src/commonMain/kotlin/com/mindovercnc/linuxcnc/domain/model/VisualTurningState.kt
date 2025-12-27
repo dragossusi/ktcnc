@@ -7,8 +7,8 @@ import androidx.compose.ui.unit.IntSize
 import com.mindovercnc.linuxcnc.actor.*
 import com.mindovercnc.linuxcnc.canvas.Canvas2DScope
 import com.mindovercnc.linuxcnc.canvas.CanvasActor
-import com.mindovercnc.model.MachineLimits
-import com.mindovercnc.model.WcsLimits
+import ro.dragossusi.model.MachineLimits
+import ro.dragossusi.model.WcsLimits
 import org.jetbrains.skia.Point
 
 const val extraAxisLength = 20 // add another 30 px for the tip of the arrow to exit the path

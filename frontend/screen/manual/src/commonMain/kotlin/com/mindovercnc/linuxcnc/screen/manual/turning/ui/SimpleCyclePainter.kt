@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.screen.manual.turning.ui
 
-import com.mindovercnc.model.SimpleCycle
+import ro.dragossusi.model.SimpleCycle
 import ktcnc.frontend.screen.manual.generated.resources.*
 import ktcnc.frontend.screen.manual.generated.resources.Res
 import ktcnc.frontend.screen.manual.generated.resources.id_turn

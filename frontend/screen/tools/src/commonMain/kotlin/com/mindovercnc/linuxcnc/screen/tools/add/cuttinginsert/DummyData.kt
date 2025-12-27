@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc.screen.tools.add.cuttinginsert
 
-import com.mindovercnc.model.FeedsAndSpeeds
-import com.mindovercnc.model.MaterialCategory
+import ro.dragossusi.model.FeedsAndSpeeds
+import ro.dragossusi.model.MaterialCategory
 
 internal object DummyData {
     val feedsAndSpeeds =

@@ -5,7 +5,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import com.mindovercnc.linuxcnc.screen.manual.simplecycles.SimpleCyclesComponent
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycleParameters
 
 @Composable
 fun SimpleCyclesScreenUi(screenModel: SimpleCyclesComponent, modifier: Modifier = Modifier) {

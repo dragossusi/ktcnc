@@ -17,7 +17,7 @@ import com.mindovercnc.linuxcnc.numpad.data.InputType
 import com.mindovercnc.linuxcnc.screen.manual.icons.ManualIcons
 import com.mindovercnc.linuxcnc.screen.manual.icons.odTurnDetails
 import com.mindovercnc.linuxcnc.screen.manual.simplecycles.SimpleCyclesComponent
-import com.mindovercnc.model.SimpleCycleParameters
+import ro.dragossusi.model.SimpleCycleParameters
 
 @Composable
 fun TurningParametersView(

@@ -19,8 +19,8 @@ import com.mindovercnc.linuxcnc.canvas.Canvas2D
 import com.mindovercnc.linuxcnc.canvas.Canvas2DScope
 import com.mindovercnc.linuxcnc.canvas.CanvasActor
 import com.mindovercnc.linuxcnc.canvas.rotateBy
-import com.mindovercnc.linuxcnc.format.toFixedDigitsString
-import com.mindovercnc.model.HandWheelsUiModel
+import ro.dragossusi.format.toFixedDigitsString
+import ro.dragossusi.model.HandWheelsUiModel
 import ktcnc.frontend.screen.manual.generated.resources.Res
 import ktcnc.frontend.screen.manual.generated.resources.hwheel
 import org.jetbrains.compose.resources.ExperimentalResourceApi

@@ -6,7 +6,7 @@ import com.mindovercnc.linuxcnc.domain.tools.ToolsUseCase
 import com.mindovercnc.linuxcnc.numpad.NumPadState
 import com.mindovercnc.linuxcnc.numpad.data.InputType
 import com.mindovercnc.linuxcnc.screen.BaseScreenModel
-import com.mindovercnc.model.*
+import ro.dragossusi.model.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

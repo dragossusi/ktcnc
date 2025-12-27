@@ -4,10 +4,10 @@ import com.mindovercnc.linuxcnc.screen.AppScreenComponent
 import com.mindovercnc.linuxcnc.screen.tools.add.AddEditItemComponent
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.MadeOf
-import com.mindovercnc.model.InsertClearance
-import com.mindovercnc.model.InsertShape
-import com.mindovercnc.model.MountingAndChipBreaker
-import com.mindovercnc.model.ToleranceClass
+import ro.dragossusi.model.InsertClearance
+import ro.dragossusi.model.InsertShape
+import ro.dragossusi.model.MountingAndChipBreaker
+import ro.dragossusi.model.ToleranceClass
 
 interface AddEditCuttingInsertComponent :
     AppScreenComponent<AddEditCuttingInsertState>, AddEditItemComponent<CuttingInsert> {

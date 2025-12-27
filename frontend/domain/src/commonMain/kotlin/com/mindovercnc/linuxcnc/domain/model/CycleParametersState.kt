@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc.domain.model
 
 import androidx.compose.runtime.mutableStateOf
-import com.mindovercnc.model.codegen.operation.ThreadingOperation
+import ro.dragossusi.model.codegen.operation.ThreadingOperation
 
 abstract class CycleParametersState(
     xEnd: Double,

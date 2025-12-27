@@ -2,8 +2,8 @@ package com.mindovercnc.linuxcnc.screen.tools.add.lathetool
 
 import com.mindovercnc.linuxcnc.tools.model.CuttingInsert
 import com.mindovercnc.linuxcnc.tools.model.ToolType
-import com.mindovercnc.model.SpindleDirection
-import com.mindovercnc.model.TipOrientation
+import ro.dragossusi.model.SpindleDirection
+import ro.dragossusi.model.TipOrientation
 
 data class AddEditLatheToolState(
     val latheToolId: Int? = null,

@@ -2,7 +2,7 @@ package com.mindovercnc.linuxcnc.screen.tools.add.feedspeed
 
 import com.mindovercnc.linuxcnc.screen.AppScreenComponent
 import com.mindovercnc.linuxcnc.screen.tools.add.AddEditItemComponent
-import com.mindovercnc.model.FeedsAndSpeeds
+import ro.dragossusi.model.FeedsAndSpeeds
 
 interface AddEditFeedsAndSpeedsComponent :
     AppScreenComponent<AddEditFeedsAndSpeedsState>, AddEditItemComponent<FeedsAndSpeeds> {
