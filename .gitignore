@@ -21,6 +21,7 @@ bin*
 kotlin-js-store/yarn.lock
 bazel-bin
 bazel-ktcnc
+bazel-ktcnc/
 bazel-ktcnc/*
 bazel-out
 bazel-testlogs
