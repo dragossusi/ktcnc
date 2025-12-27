@@ -19,8 +19,8 @@ bin*
 
 **/build
 /kotlin-js-store/yarn.lock
-/bazel-bin/
-/bazel-ktcnc/
-/bazel-out/
-/bazel-testlogs/
+/bazel-bin
+/bazel-ktcnc
+/bazel-out
+/bazel-testlogs
 /MODULE.bazel.lock
