@@ -8,11 +8,13 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.onEach
 import mu.KotlinLogging
 import ro.dragossusi.proto.linuxcnc.status.MessageType
+import kotlin.time.ExperimentalTime
 
 class MessagesUseCase(
     private val emcMessagesRepository: EmcMessagesRepository,
     private val cncMessagesRepository: CncMessagesRepository,
 ) {
+    @OptIn(ExperimentalTime::class)
     fun getAllMessages() =
         combine(
             emcMessagesRepository.messagesFlow,

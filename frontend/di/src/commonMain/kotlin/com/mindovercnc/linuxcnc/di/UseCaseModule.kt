@@ -11,6 +11,7 @@ import com.mindovercnc.linuxcnc.domain.tools.ToolsUseCase
 import org.kodein.di.DI
 import org.kodein.di.bindSingleton
 import org.kodein.di.instance
+import kotlin.time.ExperimentalTime
 
 private val gcodeCommandParsers =
     mapOf(
@@ -20,6 +21,7 @@ private val gcodeCommandParsers =
         "COMMENT" to CommentGcodeCommandParser
     )
 
+@OptIn(ExperimentalTime::class)
 val DomainModule =
     DI.Module("domain") {
         bindSingleton { MessagesUseCase(instance(), instance()) }

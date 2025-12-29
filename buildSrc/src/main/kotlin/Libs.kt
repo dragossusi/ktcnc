@@ -14,7 +14,7 @@ object Libs {
         val navigation =
             "org.jetbrains.compose.material3.adaptive:adaptive-navigation:${Versions.material3adaptive}"
         val navigationSuite =
-            "org.jetbrains.compose.material3:material3-adaptive-navigation-suite:${Versions.compose}"
+            "org.jetbrains.compose.material3:material3-adaptive-navigation-suite:${Versions.material3}"
     }
 
     object Decompose {
@@ -39,6 +39,8 @@ object Libs {
     object Compose {
         const val splitpane =
             "org.jetbrains.compose.components:components-splitpane:${Versions.compose}"
+        val material3 =
+            "org.jetbrains.compose.material3:material3:${Versions.material3}"
     }
 
     object Coroutines {

@@ -8,11 +8,13 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import kotlinx.datetime.Clock
-import kotlinx.datetime.Instant
 import mu.KotlinLogging
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
 /** Implementation for [EmcMessagesRepository]. */
+@OptIn(ExperimentalTime::class)
 class CncMessagesRepositoryImpl(
     private val clock: Clock,
 ) : CncMessagesRepository {

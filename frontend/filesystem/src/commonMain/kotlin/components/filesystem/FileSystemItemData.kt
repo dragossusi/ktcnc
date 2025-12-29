@@ -1,9 +1,10 @@
 package components.filesystem
 
 import androidx.compose.runtime.Stable
-import kotlinx.datetime.Instant
-import okio.Path
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
+@OptIn(ExperimentalTime::class)
 @Stable
 data class FileSystemItemData(
     val title: String,

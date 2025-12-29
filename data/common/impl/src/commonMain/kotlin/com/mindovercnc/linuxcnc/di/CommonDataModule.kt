@@ -6,7 +6,9 @@ import com.mindovercnc.repository.*
 import org.kodein.di.DI
 import org.kodein.di.bindSingleton
 import org.kodein.di.instance
+import kotlin.time.ExperimentalTime
 
+@OptIn(ExperimentalTime::class)
 val CommonDataModule =
     DI.Module("common_data") {
         import(EditorThemeModule)

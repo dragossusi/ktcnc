@@ -19,13 +19,14 @@ import com.mindovercnc.linuxcnc.settings.local.di.SettingsLocalModule
 import com.mindovercnc.linuxcnc.settings.remote.di.SettingsRemoteModule
 import com.mindovercnc.linuxcnc.tools.local.di.ToolsLocalModule
 import com.mindovercnc.linuxcnc.tools.remote.di.ToolsRemoteModule
-import kotlinx.datetime.Clock
 import okio.FileSystem
 import org.kodein.di.DI
 import org.kodein.di.bindProvider
 import org.kodein.di.bindSingleton
 import org.kodein.di.compose.withDI
 import org.kodein.di.instance
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
 
 val BaseAppModule =
     DI.Module("base_app") {
@@ -33,7 +34,6 @@ val BaseAppModule =
             DispatchersModule,
             EditorModule,
             databaseModule(),
-            InitializerModule,
             DomainModule,
         )
         bindSingleton { StatusWatcher(instance(), instance(), instance()) }
@@ -42,6 +42,7 @@ val BaseAppModule =
         bindSingleton<EditorReader> { FileEditorReader }
     }
 
+@OptIn(ExperimentalTime::class)
 val SystemModule =
     DI.Module("system") {
         bindSingleton { FileSystem.SYSTEM }
@@ -85,6 +86,7 @@ fun appDi(appConfig: AppConfig) = DI.Module("app") {
         CommonDataModule,
         dataModule,
         ParseFactoryModule,
+        initializerModule(appConfig),
     )
 
     bindProvider(tag = "app_dir") { Files.appDir }

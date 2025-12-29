@@ -35,7 +35,7 @@ kotlin {
                 implementation(Libs.okio)
 
                 // compose
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
 
 
                 // internal modules

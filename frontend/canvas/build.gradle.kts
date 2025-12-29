@@ -16,7 +16,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(compose.ui)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
                 implementation(project(":model"))
             }
         }

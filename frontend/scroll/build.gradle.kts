@@ -20,7 +20,7 @@ kotlin {
                 implementation(Libs.Coroutines.core)
                 implementation(compose.runtime)
                 implementation(compose.ui)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
             }
         }
     }

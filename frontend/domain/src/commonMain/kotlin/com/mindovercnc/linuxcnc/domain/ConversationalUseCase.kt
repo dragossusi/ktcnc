@@ -6,9 +6,11 @@ import com.mindovercnc.dispatchers.createScope
 import ro.dragossusi.model.codegen.ConversationalProgram
 import ro.dragossusi.model.codegen.operation.TurningOperation
 import kotlinx.coroutines.launch
-import kotlinx.datetime.Clock
 import mu.KotlinLogging
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
 
+@OptIn(ExperimentalTime::class)
 @Deprecated("This is a deprecated class")
 class ConversationalUseCase(
     ioDispatcher: IoDispatcher,

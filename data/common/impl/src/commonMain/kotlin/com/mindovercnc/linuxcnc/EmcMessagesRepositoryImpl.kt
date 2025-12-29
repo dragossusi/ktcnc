@@ -6,7 +6,7 @@ import com.mindovercnc.dispatchers.createScope
 import ro.dragossusi.model.CncStateMessage
 import com.mindovercnc.repository.EmcMessagesRepository
 import kotlinx.coroutines.flow.*
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import mu.KotlinLogging
 import ro.dragossusi.proto.linuxcnc.status.SystemMessage
 

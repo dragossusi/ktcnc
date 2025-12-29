@@ -32,7 +32,7 @@ kotlin {
                 // compose
                 //                implementation(compose.uiTooling)
                 implementation(compose.materialIconsExtended)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
                 implementation(compose.components.resources)
 
                 // internal modules

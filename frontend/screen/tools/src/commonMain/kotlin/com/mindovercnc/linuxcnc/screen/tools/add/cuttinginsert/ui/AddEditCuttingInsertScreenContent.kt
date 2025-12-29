@@ -104,7 +104,8 @@ private fun Properties(
                     insertShapeChange = component::setInsertShape,
                     insertClearanceChange = component::setInsertClearance,
                     toleranceClassChange = component::setToleranceClass,
-                    mountingChipBreakerChange = component::setMountingAndChipBreaker
+                    mountingChipBreakerChange = component::setMountingAndChipBreaker,
+                    modifier = Modifier.fillMaxWidth()
                 )
                 ValueSetting(
                     settingName = "Tip Radius",

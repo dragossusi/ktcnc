@@ -7,10 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.text.selection.DisableSelection
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -35,6 +32,7 @@ import scroll.VerticalScrollbar
 import scroll.draggableScroll
 import kotlin.text.Regex.Companion.fromLiteral
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun EditorView(
     state: EditorState,
@@ -61,7 +59,7 @@ fun EditorView(
                     )
                 }
             } else {
-                CircularProgressIndicator(modifier = Modifier.size(36.dp).padding(4.dp))
+                CircularWavyProgressIndicator(modifier = Modifier.size(36.dp).padding(4.dp))
             }
         }
     }
@@ -156,9 +154,9 @@ private fun Line(
             LineContent(
                 line = line,
                 modifier =
-                Modifier.weight(1f)
-                    .withoutWidthConstraints()
-                    .padding(start = 28.dp, end = 12.dp),
+                    Modifier.weight(1f)
+                        .withoutWidthConstraints()
+                        .padding(start = 28.dp, end = 12.dp),
                 settings = settings
             )
         }
@@ -173,10 +171,10 @@ private fun LineContent(
 ) {
     Text(
         text =
-        when (LocalEditorFileType.current) {
-            EditorFileType.GCODE -> codeString(line.text)
-            EditorFileType.NORMAL -> normalString(line.text)
-        },
+            when (LocalEditorFileType.current) {
+                EditorFileType.GCODE -> codeString(line.text)
+                EditorFileType.NORMAL -> normalString(line.text)
+            },
         fontSize = settings.fontSize,
         fontFamily = FontFamily.Monospace,
         modifier = modifier,

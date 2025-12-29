@@ -2,10 +2,8 @@ package components.filesystem
 
 import androidx.compose.foundation.ContextMenuArea
 import androidx.compose.foundation.ContextMenuItem
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.draganddrop.dragAndDropSource
-import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
 import androidx.compose.material3.Text
@@ -18,15 +16,17 @@ import androidx.compose.ui.draganddrop.DragAndDropTransferable
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import kotlinx.datetime.Instant
-import kotlinx.datetime.toJavaInstant
 import okio.Path
 import okio.Path.Companion.toPath
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.Transferable
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
+import kotlin.time.toJavaInstant
 
+@OptIn(ExperimentalTime::class)
 @Composable
 actual fun FileSystemItemView(item: FileSystemItemData, modifier: Modifier) {
     ContextMenuArea(
@@ -62,40 +62,31 @@ actual fun FileSystemItemView(item: FileSystemItemData, modifier: Modifier) {
 
 private val formatter = DateTimeFormatter.ISO_DATE.withZone(ZoneId.systemDefault())
 
+@OptIn(ExperimentalTime::class)
 internal fun millisToLastModified(instant: Instant): String {
     return formatter.format(instant.toJavaInstant())
 }
 
-@OptIn(ExperimentalFoundationApi::class, ExperimentalComposeUiApi::class)
-private fun Modifier.fileDragSource(path: Path): Modifier = dragAndDropSource(
-    drawDragDecoration = {
-    },
-) {
-    detectDragGestures(
-        onDragStart = { offset ->
-            startTransfer(
-                DragAndDropTransferData(
-                    DragAndDropTransferable(
-                        OkioPathTransferable(path)
-                    ),
-                    supportedActions = listOf(
-                        DragAndDropTransferAction.Copy,
-                        DragAndDropTransferAction.Move,
-                        DragAndDropTransferAction.Link,
-                    ),
-                    onTransferCompleted = { action ->
-                        when (action) {
-                            null -> println("Transfer aborted")
-                            DragAndDropTransferAction.Copy -> println("Copied")
-                            DragAndDropTransferAction.Move -> println("Moved")
-                            DragAndDropTransferAction.Link -> println("Linked")
-                        }
-                    },
-                    dragDecorationOffset = offset
-                )
-            )
+@OptIn(ExperimentalComposeUiApi::class)
+private fun Modifier.fileDragSource(path: Path): Modifier = dragAndDropSource() { offset ->
+    DragAndDropTransferData(
+        DragAndDropTransferable(
+            OkioPathTransferable(path)
+        ),
+        supportedActions = listOf(
+            DragAndDropTransferAction.Copy,
+            DragAndDropTransferAction.Move,
+            DragAndDropTransferAction.Link,
+        ),
+        onTransferCompleted = { action ->
+            when (action) {
+                null -> println("Transfer aborted")
+                DragAndDropTransferAction.Copy -> println("Copied")
+                DragAndDropTransferAction.Move -> println("Moved")
+                DragAndDropTransferAction.Link -> println("Linked")
+            }
         },
-        onDrag = { _, _ -> },
+        dragDecorationOffset = offset
     )
 }
 
