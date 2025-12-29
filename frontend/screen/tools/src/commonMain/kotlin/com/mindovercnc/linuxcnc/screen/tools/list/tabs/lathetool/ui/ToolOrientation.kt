@@ -1,22 +1,17 @@
 package com.mindovercnc.linuxcnc.screen.tools.list.tabs.lathetool.ui
 
-import androidx.compose.foundation.BorderStroke
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Icon
-import androidx.compose.material3.LocalContentColor
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.model.TipOrientation
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 
 private val pickerModifier = Modifier.size(50.dp)
@@ -70,6 +65,7 @@ private fun TipOrientationRow(
     }
 }
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun TipOrientationUi(
     orientation: TipOrientation,
@@ -82,20 +78,24 @@ fun TipOrientationUi(
         TipOrientationPainter.from(orientation)
     }
 
-    Surface(
+    IconToggleButton(
         modifier = modifier,
-        onClick = { onClick(orientation) },
-        border = BorderStroke(1.dp, Color.LightGray),
-        shape = RoundedCornerShape(4.dp),
+        checked = active == true,
+        onCheckedChange = { onClick(orientation) },
+        shapes = IconButtonDefaults.toggleableShapes(),
         enabled = enabled,
-        color = MaterialTheme.colorScheme.secondaryContainer
+        colors = IconButtonDefaults.iconToggleButtonColors(
+            containerColor = MaterialTheme.colorScheme.secondaryContainer,
+            checkedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
+        )
     ) {
-        val selectedTint =
+        val selectedTint by animateColorAsState(
             when (active) {
                 true -> MaterialTheme.colorScheme.primary
                 false -> MaterialTheme.colorScheme.surface
                 else -> LocalContentColor.current
             }
+        )
         Icon(
             painter = painterResource(fileName),
             tint = selectedTint,

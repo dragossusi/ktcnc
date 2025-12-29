@@ -35,7 +35,7 @@ kotlin {
                 // compose
                 //                implementation(compose.uiTooling)
                 implementation(compose.materialIconsExtended)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
                 @OptIn(ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
 

@@ -1,5 +1,7 @@
 package di
 
+import AppConfig
+import Communication
 import com.mindovercnc.linuxcnc.initializer.KtlCncInitializer
 import initializer.Initializer
 import initializer.SimpleInitializer
@@ -9,18 +11,29 @@ import org.kodein.di.instance
 import startup.AppDirInitializer
 import startup.StatusWatchInitializer
 
-val InitializerModule = DI.Module("initializer") {
+fun initializerModule(appConfig: AppConfig) = DI.Module("initializer") {
+    bindSingleton { AppDirInitializer(instance()) }
+
+    bindSingleton { StatusWatchInitializer(instance(), instance()) }
+
     bindSingleton("app") {
         val appDirInitializer: AppDirInitializer = instance()
-        val ktlCncInitializer: KtlCncInitializer = instance()
         val databaseInitializer: Initializer = instance("database")
         val statusWatchInitializer: StatusWatchInitializer = instance()
 
-        SimpleInitializer(appDirInitializer, ktlCncInitializer, databaseInitializer, statusWatchInitializer)
+        val steps = listOfNotNull(
+            appDirInitializer,
+            instance<KtlCncInitializer>().takeIf { appConfig.communication is Communication.Local },
+            databaseInitializer,
+            statusWatchInitializer
+        )
+
+        SimpleInitializer(*steps.toTypedArray())
     }
 
-    bindSingleton { AppDirInitializer(instance()) }
+    import(LocalInitializerModule)
+}
 
+val LocalInitializerModule = DI.Module("local_initializer") {
     bindSingleton { KtlCncInitializer(instance("app_dir")) }
-    bindSingleton { StatusWatchInitializer(instance(), instance()) }
 }

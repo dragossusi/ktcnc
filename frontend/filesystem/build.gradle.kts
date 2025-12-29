@@ -26,7 +26,7 @@ kotlin {
 
                 implementation(compose.runtime)
                 implementation(compose.ui)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
                 @OptIn(ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
 

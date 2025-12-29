@@ -2,16 +2,13 @@ package com.mindovercnc.linuxcnc.screen.programs.programloaded.ui
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.mindovercnc.linuxcnc.screen.programs.programloaded.ProgramLoadedComponent
-import androidx.compose.material3.VerticalDivider
 import editor.EditorView
 import editor.FileNameHeader
 
@@ -29,6 +26,7 @@ internal fun ProgramLoadedScreenUi(
     }
 }
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 private fun StartContent(component: ProgramLoadedComponent, modifier: Modifier = Modifier) {
     val state by component.state.collectAsState()
@@ -42,7 +40,7 @@ private fun StartContent(component: ProgramLoadedComponent, modifier: Modifier =
                 modifier = Modifier.fillMaxSize()
             )
         } else {
-            CircularProgressIndicator(modifier = Modifier.fillMaxSize())
+            CircularWavyProgressIndicator(modifier = Modifier.fillMaxSize())
         }
     }
 }

@@ -31,7 +31,7 @@ kotlin {
 
                 // compose
                 //                implementation(compose.uiTooling)
-                implementation(compose.material3)
+                implementation(Libs.Compose.material3)
                 implementation(compose.materialIconsExtended)
                 implementation(compose.components.resources)
 

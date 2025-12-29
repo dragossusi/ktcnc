@@ -13,7 +13,7 @@ dependencies {
     //compose
     implementation(compose.desktop.currentOs)
     implementation(compose.uiTooling)
-    implementation(compose.material3)
+    implementation(Libs.Compose.material3)
 
     implementation(project(":model"))
 

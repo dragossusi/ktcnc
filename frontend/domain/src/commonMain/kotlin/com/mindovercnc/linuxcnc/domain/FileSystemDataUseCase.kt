@@ -5,11 +5,13 @@ import com.mindovercnc.data.linuxcnc.FileSystemRepository
 import components.filesystem.FileSystemData
 import components.filesystem.FileSystemItemData
 import ro.dragossusi.ktcnc.rpc.FileResponse
+import kotlin.time.ExperimentalTime
 
 class FileSystemDataUseCase(
     private val fileSystemRepository: FileSystemRepository
 ) {
 
+    @OptIn(ExperimentalTime::class)
     suspend fun FileResponse.toFileSystemData(onItemClick: (FileResponse) -> Unit): FileSystemData {
         val items = fileSystemRepository.getFilesInPath(path)
             .map { item ->

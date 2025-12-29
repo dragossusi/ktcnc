@@ -2,10 +2,7 @@ package startup
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -17,6 +14,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import org.kodein.di.compose.rememberInstance
 
+@OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 fun InitializerScreen(onInitialise: () -> Unit, modifier: Modifier = Modifier) {
     val initializer: Initializer by rememberInstance("app")
@@ -39,7 +37,7 @@ fun InitializerScreen(onInitialise: () -> Unit, modifier: Modifier = Modifier) {
         ) {
             Text("Initialising", style = MaterialTheme.typography.titleMedium)
             Text("Step $stepNumber/$stepCount")
-            CircularProgressIndicator()
+            CircularWavyProgressIndicator()
         }
     }
 }

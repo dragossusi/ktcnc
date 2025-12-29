@@ -1,5 +1,6 @@
 package com.mindovercnc.linuxcnc.screen.tools.list.tabs.lathetool.ui
 
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.onClick
@@ -8,6 +9,7 @@ import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -58,12 +60,13 @@ fun DirectionItem(
             SpindleDirection.None -> null
         }
 
-    val selectedTint =
+    val selectedTint by animateColorAsState(
         when (active) {
             true -> MaterialTheme.colorScheme.primary
             false -> MaterialTheme.colorScheme.surfaceVariant
             else -> LocalContentColor.current
         }
+    )
 
     Box(contentAlignment = Alignment.Center, modifier = modifier) {
         if (resource != null) {
@@ -78,6 +81,7 @@ fun DirectionItem(
             text = spindleDirection.shortName.uppercase(),
             style = MaterialTheme.typography.labelSmall,
             textAlign = TextAlign.Center,
-            color = selectedTint)
+            color = selectedTint
+        )
     }
 }

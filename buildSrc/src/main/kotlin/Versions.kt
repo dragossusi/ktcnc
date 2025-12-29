@@ -1,20 +1,21 @@
 object Versions {
-    const val kotlin = "2.2.0"
-    const val ksp = "2.2.0-2.0.2"
-    const val compose = "1.9.0"
-    const val material3adaptive = "1.2.0-alpha06"
+    const val kotlin = "2.2.21"
+    const val ksp = "2.3.3"
+    const val compose = "1.10.0-rc01"
+    const val material3 = "1.10.0-alpha05"
+    const val material3adaptive = "1.3.0-alpha02"
     const val kodein = "7.26.1"
 
     const val okio = "3.16.0"
-    const val wire = "5.3.6"
-    const val roborazzi = "1.46.1"
+    const val wire = "5.4.0"
+    const val roborazzi = "1.52.0"
 
     const val room = "2.7.2"
     const val sqlite = "2.5.2"
 
     const val bignum = "0.3.10"
     const val mockk = "1.13.7"
-    const val decompose = "3.3.0"
+    const val decompose = "3.4.0"
     const val ktor = "3.3.0"
 
     object Kotlinx {
@@ -22,7 +23,7 @@ object Versions {
         const val cli = "0.3.6"
         const val coroutines = "1.10.2"
         const val serialization = "1.9.0"
-        const val rpc = "0.9.1"
+        const val rpc = "0.10.1"
     }
 
     object Log {
