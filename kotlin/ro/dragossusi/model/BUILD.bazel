@@ -7,5 +7,6 @@ kt_jvm_library(
     deps = [
         "@maven//:com_squareup_okio_okio",
         "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_core_jvm",
+        "@linuxcnc_proto//:linuxcnc_kt_proto"
     ],
 )

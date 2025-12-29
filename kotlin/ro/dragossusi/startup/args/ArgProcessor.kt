@@ -1,4 +1,4 @@
-package startup.args
+package ro.dragossusi.startup.args
 
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp

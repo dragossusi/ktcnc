@@ -18,6 +18,14 @@ register_toolchains("@androidsdk//:sdk-toolchain", "@androidsdk//:all")
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
+        # compose
+        "org.jetbrains.compose.ui:ui:1.9.3",
+        "org.jetbrains.compose.material3:material3:1.9.3",
+        "org.jetbrains.compose.runtime:runtime:1.9.3",
+        # logging
+        "io.github.microutils:kotlin-logging-jvm:3.0.5",
+        # kotlinx cli
+        "org.jetbrains.kotlinx:kotlinx-cli-jvm:0.3.6",
         # okio
         "com.squareup.okio:okio:3.16.0",
         # room
@@ -35,6 +43,9 @@ maven.install(
 use_repo(maven, "maven")
 
 # kotlin
-bazel_dep(name = "rules_kotlin", version = "2.2.1")
+bazel_dep(name = "rules_kotlin", version = "2.2.2")
 
 register_toolchains("//:kotlin_toolchain")
+
+bazel_dep(name = "linuxcnc_proto")
+local_path_override(module_name = "linuxcnc_proto", path="/home/dragos/IdeaProjects/linuxcnc-proto")

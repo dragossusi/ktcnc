@@ -1,6 +1,7 @@
 // Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the
 // Apache 2.0 license that can be found in the LICENSE file.
 @file:Suppress("FunctionName")
+package ro.dragossusi.frontend.app
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable

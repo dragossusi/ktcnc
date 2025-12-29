@@ -1,4 +1,4 @@
-package startup.args
+package ro.dragossusi.startup.args
 
 enum class DarkMode {
     SYSTEM,

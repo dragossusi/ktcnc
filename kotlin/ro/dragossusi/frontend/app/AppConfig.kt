@@ -1,3 +1,5 @@
+package ro.dragossusi.frontend.app
+
 import androidx.compose.ui.unit.DpSize
 import okio.Path
 import startup.args.DarkMode
