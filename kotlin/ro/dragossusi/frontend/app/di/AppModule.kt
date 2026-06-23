@@ -1,7 +1,5 @@
-package di
+package ro.dragossusi.frontend.app.di
 
-import AppConfig
-import Communication
 import Files
 import StatusWatcher
 import androidx.compose.runtime.Composable
@@ -11,8 +9,8 @@ import com.mindovercnc.data.linuxcnc.local.di.LinuxcncLegacyDataModule
 import com.mindovercnc.data.linuxcnc.remote.di.LinuxcncRemoteDataModule
 import com.mindovercnc.database.di.databaseModule
 import com.mindovercnc.dispatchers.DispatchersModule
-import com.mindovercnc.editor.reader.EditorReader
-import com.mindovercnc.editor.reader.FileEditorReader
+import ro.dragossusi.editor.reader.EditorReader
+import ro.dragossusi.editor.reader.FileEditorReader
 import com.mindovercnc.linuxcnc.di.*
 import com.mindovercnc.linuxcnc.gcode.local.di.GCodeLocalModule
 import com.mindovercnc.linuxcnc.settings.local.di.SettingsLocalModule

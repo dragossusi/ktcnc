@@ -1,4 +1,4 @@
-package startup.args
+package ro.dragossusi.startup.args
 
 import okio.Path
 import okio.Path.Companion.toPath

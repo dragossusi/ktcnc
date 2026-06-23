@@ -1,9 +1,9 @@
-package com.mindovercnc.editor.impl
+package ro.dragossusi.editor.impl
 
-import com.mindovercnc.editor.Editor
-import com.mindovercnc.editor.EditorLoader
-import com.mindovercnc.editor.reader.EditorReader
-import com.mindovercnc.editor.textlines.EmptyTextLines
+import ro.dragossusi.editor.Editor
+import ro.dragossusi.editor.EditorLoader
+import ro.dragossusi.editor.reader.EditorReader
+import ro.dragossusi.editor.textlines.EmptyTextLines
 import okio.Path
 
 class EditorLoaderImpl(private val reader: EditorReader) : EditorLoader {

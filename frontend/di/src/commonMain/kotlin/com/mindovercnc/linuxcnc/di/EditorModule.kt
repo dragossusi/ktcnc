@@ -1,8 +1,8 @@
 package com.mindovercnc.linuxcnc.di
 
-import com.mindovercnc.editor.impl.EditorLoaderImpl
-import com.mindovercnc.editor.type.EditorFileTypeHandler
-import com.mindovercnc.editor.type.EditorFileTypeHandlerImpl
+import ro.dragossusi.editor.impl.EditorLoaderImpl
+import ro.dragossusi.editor.type.EditorFileTypeHandler
+import ro.dragossusi.editor.type.EditorFileTypeHandlerImpl
 import org.kodein.di.DI
 import org.kodein.di.bindSingleton
 import org.kodein.di.instance

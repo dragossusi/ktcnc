@@ -1,6 +1,6 @@
 package editor
 
-import com.mindovercnc.editor.Editor
+import ro.dragossusi.editor.Editor
 
 data class EditorState(
     val editor: Editor,

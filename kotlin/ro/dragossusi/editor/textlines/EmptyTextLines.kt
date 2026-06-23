@@ -1,4 +1,4 @@
-package com.mindovercnc.editor.textlines
+package ro.dragossusi.editor.textlines
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

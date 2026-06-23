@@ -1,0 +1,18 @@
+load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "editor",
+    srcs = glob(["**/*.kt"]),
+    visibility = ["//visibility:public"],
+    plugins = [
+        "//third_party/kotlin/serialization:serialization_plugin"
+    ],
+    deps = [
+        "@maven//:com_squareup_okio_okio_jvm",
+        "@maven//:org_kodein_di_kodein_di_jvm",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_core_jvm",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_json_jvm",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_serialization_json_okio_jvm"
+    ]
+)

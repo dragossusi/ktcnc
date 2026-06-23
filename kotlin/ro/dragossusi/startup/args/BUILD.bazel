@@ -13,6 +13,6 @@ kt_jvm_library(
         "@maven//:com_squareup_okio_okio_jvm",
         "@maven//:org_jetbrains_kotlinx_kotlinx_cli_jvm",
         "@maven//:io_github_microutils_kotlin_logging_jvm",
-        "@maven//:org_jetbrains_compose_ui_ui"
+#         "@maven//:org_jetbrains_compose_ui_ui"
     ]
 )

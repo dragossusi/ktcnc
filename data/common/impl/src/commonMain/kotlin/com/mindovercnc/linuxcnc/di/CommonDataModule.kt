@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.di
 
-import com.mindovercnc.editor.di.EditorThemeModule
+import ro.dragossusi.editor.di.EditorThemeModule
 import com.mindovercnc.linuxcnc.*
 import com.mindovercnc.repository.*
 import org.kodein.di.DI

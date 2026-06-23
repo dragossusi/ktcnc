@@ -1,7 +1,7 @@
 package com.mindovercnc.linuxcnc
 
-import com.mindovercnc.editor.EditorTheme
-import com.mindovercnc.editor.EditorThemeLoader
+import ro.dragossusi.editor.EditorTheme
+import ro.dragossusi.editor.EditorThemeLoader
 import com.mindovercnc.repository.EditorThemeRepository
 import okio.Path
 

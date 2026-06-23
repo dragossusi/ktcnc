@@ -19,9 +19,13 @@ maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
     artifacts = [
         # compose
-        "org.jetbrains.compose.ui:ui:1.9.3",
-        "org.jetbrains.compose.material3:material3:1.9.3",
-        "org.jetbrains.compose.runtime:runtime:1.9.3",
+#         "org.jetbrains.compose.ui:ui:1.9.3",
+#         "org.jetbrains.compose.material3:material3:1.9.3",
+#         "org.jetbrains.compose.runtime:runtime:1.9.3",
+        "org.jetbrains.kotlinx:kotlinx-serialization-json-okio:1.8.1",
+        # kodein di
+        "org.kodein.di:kodein-di-jvm:7.26.1",
+
         # logging
         "io.github.microutils:kotlin-logging-jvm:3.0.5",
         # kotlinx cli

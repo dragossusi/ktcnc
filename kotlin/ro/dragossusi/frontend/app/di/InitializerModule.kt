@@ -1,4 +1,4 @@
-package di
+package ro.dragossusi.frontend.app.di
 
 import AppConfig
 import Communication

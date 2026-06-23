@@ -1,8 +1,8 @@
-package com.mindovercnc.editor.reader
+package ro.dragossusi.editor.reader
 
-import com.mindovercnc.editor.IntList
-import com.mindovercnc.editor.textlines.TextLineContent
-import com.mindovercnc.editor.textlines.TextLines
+import ro.dragossusi.editor.IntList
+import ro.dragossusi.editor.textlines.TextLineContent
+import ro.dragossusi.editor.textlines.TextLines
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

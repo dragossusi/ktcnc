@@ -5,7 +5,7 @@ import androidx.compose.ui.unit.IntSize
 import com.arkivanov.decompose.ComponentContext
 import com.mindovercnc.data.linuxcnc.IniFileRepository
 import com.mindovercnc.dispatchers.IoDispatcher
-import com.mindovercnc.editor.impl.EditorLoaderImpl
+import ro.dragossusi.editor.impl.EditorLoaderImpl
 import com.mindovercnc.linuxcnc.actor.PathActor
 import com.mindovercnc.linuxcnc.actor.ProgramData
 import com.mindovercnc.linuxcnc.domain.*

@@ -1,8 +1,8 @@
-package com.mindovercnc.editor.reader
+package ro.dragossusi.editor.reader
 
-import com.mindovercnc.editor.IntList
-import com.mindovercnc.editor.textlines.TextLineContent
-import com.mindovercnc.editor.textlines.TextLines
+import ro.dragossusi.editor.IntList
+import ro.dragossusi.editor.textlines.TextLineContent
+import ro.dragossusi.editor.textlines.TextLines
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -22,7 +22,7 @@ import java.nio.charset.StandardCharsets
  */
 @Deprecated(
     "This does not support multiplatform.",
-    replaceWith = ReplaceWith("PathEditorReader", "com.mindovercnc.editor.reader.PathEditorReader"),
+    replaceWith = ReplaceWith("PathEditorReader", "ro.dragossusi.editor.reader.PathEditorReader"),
     level = DeprecationLevel.WARNING
 )
 object FileEditorReader : EditorReader {

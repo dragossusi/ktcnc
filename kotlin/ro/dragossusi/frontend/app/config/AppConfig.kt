@@ -1,8 +1,8 @@
-package ro.dragossusi.frontend.app
+package ro.dragossusi.frontend.app.config
 
 import androidx.compose.ui.unit.DpSize
 import okio.Path
-import startup.args.DarkMode
+import ro.dragossusi.startup.args.DarkMode
 
 class AppConfig(
     val iniFile: Path,

@@ -19,10 +19,10 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
-import com.mindovercnc.editor.textlines.TextLineContent
-import com.mindovercnc.editor.textlines.TextLines
-import com.mindovercnc.editor.type.EditorFileType
-import com.mindovercnc.editor.type.EditorFileTypeHandler
+import ro.dragossusi.editor.textlines.TextLineContent
+import ro.dragossusi.editor.textlines.TextLines
+import ro.dragossusi.editor.type.EditorFileType
+import ro.dragossusi.editor.type.EditorFileTypeHandler
 import editor.line.LineNumber
 import editor.util.loadableScoped
 import editor.util.withoutWidthConstraints

@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.domain.editor
 
-import com.mindovercnc.editor.EditorTheme
+import ro.dragossusi.editor.EditorTheme
 import com.mindovercnc.repository.EditorThemeRepository
 import editor.theme.DefaultEditorTheme
 

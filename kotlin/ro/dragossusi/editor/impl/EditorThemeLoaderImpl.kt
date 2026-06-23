@@ -1,7 +1,7 @@
-package com.mindovercnc.editor.impl
+package ro.dragossusi.editor.impl
 
-import com.mindovercnc.editor.EditorTheme
-import com.mindovercnc.editor.EditorThemeLoader
+import ro.dragossusi.editor.EditorTheme
+import ro.dragossusi.editor.EditorThemeLoader
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.okio.decodeFromBufferedSource

@@ -1,4 +1,4 @@
-package com.mindovercnc.editor
+package ro.dragossusi.editor
 
 import kotlinx.serialization.Serializable
 import kotlin.jvm.JvmInline

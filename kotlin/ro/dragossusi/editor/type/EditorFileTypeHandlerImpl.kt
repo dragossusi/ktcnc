@@ -1,4 +1,4 @@
-package com.mindovercnc.editor.type
+package ro.dragossusi.editor.type
 
 import okio.Path
 

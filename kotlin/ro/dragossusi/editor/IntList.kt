@@ -1,4 +1,4 @@
-package com.mindovercnc.editor
+package ro.dragossusi.editor
 
 import kotlin.concurrent.Volatile
 

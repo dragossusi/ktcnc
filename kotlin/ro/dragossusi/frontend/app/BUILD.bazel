@@ -2,7 +2,11 @@ load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary")
 
 kt_jvm_binary(
     name = "app",
-    srcs = glob(["*.kt"]),
+    srcs = [
+        "AppWindow.kt",
+        "CommunicationPickerWindow.kt",
+        "main.kt"
+    ],
     main_class = "ro.dragossusi.frontend.app.MainKt",
     deps = [
         "@maven//:com_squareup_okio_okio_jvm",

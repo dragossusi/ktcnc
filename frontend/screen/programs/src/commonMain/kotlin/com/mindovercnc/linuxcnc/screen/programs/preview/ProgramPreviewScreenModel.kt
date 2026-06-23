@@ -1,6 +1,6 @@
 package com.mindovercnc.linuxcnc.screen.programs.preview
 
-import com.mindovercnc.editor.impl.EditorLoaderImpl
+import ro.dragossusi.editor.impl.EditorLoaderImpl
 import editor.EditorState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

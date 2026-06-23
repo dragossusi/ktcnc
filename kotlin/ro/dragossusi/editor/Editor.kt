@@ -1,6 +1,6 @@
-package com.mindovercnc.editor
+package ro.dragossusi.editor
 
-import com.mindovercnc.editor.textlines.TextLines
+import ro.dragossusi.editor.textlines.TextLines
 import kotlinx.coroutines.CoroutineScope
 import okio.Path
 

@@ -1,7 +1,7 @@
 package com.mindovercnc.repository
 
-import com.mindovercnc.editor.EditorTheme
-import com.mindovercnc.editor.EditorThemeVariant
+import ro.dragossusi.editor.EditorTheme
+import ro.dragossusi.editor.EditorThemeVariant
 
 /** Repository for [EditorThemeVariant]. */
 interface EditorThemeRepository {

@@ -1,6 +1,11 @@
 load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 
 kt_jvm_library(
-    name = "app",
+    name = "di",
     srcs = glob(["*.kt"]),
+    deps = [
+        "//kotlin/ro/dragossusi/frontend/app/config",
+        "//kotlin/ro/dragossusi/editor",
+        "@maven//:org_kodein_di_kodein_di_jvm"
+    ]
 )

@@ -1,9 +1,9 @@
 package editor.theme
 
-import com.mindovercnc.editor.EditorTheme
-import com.mindovercnc.editor.EditorThemeVariant
-import com.mindovercnc.editor.IntColor
-import com.mindovercnc.editor.LineNumberTheme
+import ro.dragossusi.editor.EditorTheme
+import ro.dragossusi.editor.EditorThemeVariant
+import ro.dragossusi.editor.IntColor
+import ro.dragossusi.editor.LineNumberTheme
 
 
 object DefaultEditorTheme {

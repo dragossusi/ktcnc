@@ -1,9 +1,9 @@
-package com.mindovercnc.editor.di
+package ro.dragossusi.editor.di
 
-import com.mindovercnc.editor.EditorLoader
-import com.mindovercnc.editor.EditorThemeLoader
-import com.mindovercnc.editor.impl.EditorLoaderImpl
-import com.mindovercnc.editor.impl.EditorThemeLoaderImpl
+import ro.dragossusi.editor.EditorLoader
+import ro.dragossusi.editor.EditorThemeLoader
+import ro.dragossusi.editor.impl.EditorLoaderImpl
+import ro.dragossusi.editor.impl.EditorThemeLoaderImpl
 import org.kodein.di.DI
 import org.kodein.di.bindProvider
 import org.kodein.di.instance
